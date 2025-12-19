@@ -1,0 +1,1 @@
+# YOLOv8_Ascend310B_object_detect
