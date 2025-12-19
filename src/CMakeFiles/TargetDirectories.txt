@@ -1,0 +1,7 @@
+/data/ascend-yolov8-sample/src/CMakeFiles/main.dir
+/data/ascend-yolov8-sample/src/CMakeFiles/edit_cache.dir
+/data/ascend-yolov8-sample/src/CMakeFiles/rebuild_cache.dir
+/data/ascend-yolov8-sample/src/CMakeFiles/list_install_components.dir
+/data/ascend-yolov8-sample/src/CMakeFiles/install.dir
+/data/ascend-yolov8-sample/src/CMakeFiles/install/local.dir
+/data/ascend-yolov8-sample/src/CMakeFiles/install/strip.dir
