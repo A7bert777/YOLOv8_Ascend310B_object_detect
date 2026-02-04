@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/data/ascend-yolov8-sample/src/sampleYOLOV8.cpp" "CMakeFiles/main.dir/sampleYOLOV8.cpp.o" "gcc" "CMakeFiles/main.dir/sampleYOLOV8.cpp.o.d"
+  "/data/YOLOv8_Ascend310B_object_detect-main/src/sampleYOLOV8.cpp" "CMakeFiles/ascend_310b_yolov8_demo.dir/src/sampleYOLOV8.cpp.o" "gcc" "CMakeFiles/ascend_310b_yolov8_demo.dir/src/sampleYOLOV8.cpp.o.d"
   )
 
 # Targets to which this target links.

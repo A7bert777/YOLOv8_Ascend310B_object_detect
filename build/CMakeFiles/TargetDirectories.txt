@@ -1,0 +1,7 @@
+/data/YOLOv8_Ascend310B_object_detect-main/build/CMakeFiles/ascend_310b_yolov8_demo.dir
+/data/YOLOv8_Ascend310B_object_detect-main/build/CMakeFiles/edit_cache.dir
+/data/YOLOv8_Ascend310B_object_detect-main/build/CMakeFiles/rebuild_cache.dir
+/data/YOLOv8_Ascend310B_object_detect-main/build/CMakeFiles/list_install_components.dir
+/data/YOLOv8_Ascend310B_object_detect-main/build/CMakeFiles/install.dir
+/data/YOLOv8_Ascend310B_object_detect-main/build/CMakeFiles/install/local.dir
+/data/YOLOv8_Ascend310B_object_detect-main/build/CMakeFiles/install/strip.dir

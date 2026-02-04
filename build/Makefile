@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/ascend-yolov8-sample/src
+CMAKE_SOURCE_DIR = /data/YOLOv8_Ascend310B_object_detect-main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/ascend-yolov8-sample/src
+CMAKE_BINARY_DIR = /data/YOLOv8_Ascend310B_object_detect-main/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/ascend-yolov8-sample/src/CMakeFiles /data/ascend-yolov8-sample/src//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/YOLOv8_Ascend310B_object_detect-main/build/CMakeFiles /data/YOLOv8_Ascend310B_object_detect-main/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/ascend-yolov8-sample/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/YOLOv8_Ascend310B_object_detect-main/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,41 +162,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named ascend_310b_yolov8_demo
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+ascend_310b_yolov8_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ascend_310b_yolov8_demo
+.PHONY : ascend_310b_yolov8_demo
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+ascend_310b_yolov8_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascend_310b_yolov8_demo.dir/build.make CMakeFiles/ascend_310b_yolov8_demo.dir/build
+.PHONY : ascend_310b_yolov8_demo/fast
 
-sampleYOLOV8.o: sampleYOLOV8.cpp.o
-.PHONY : sampleYOLOV8.o
+src/sampleYOLOV8.o: src/sampleYOLOV8.cpp.o
+.PHONY : src/sampleYOLOV8.o
 
 # target to build an object file
-sampleYOLOV8.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sampleYOLOV8.cpp.o
-.PHONY : sampleYOLOV8.cpp.o
+src/sampleYOLOV8.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascend_310b_yolov8_demo.dir/build.make CMakeFiles/ascend_310b_yolov8_demo.dir/src/sampleYOLOV8.cpp.o
+.PHONY : src/sampleYOLOV8.cpp.o
 
-sampleYOLOV8.i: sampleYOLOV8.cpp.i
-.PHONY : sampleYOLOV8.i
+src/sampleYOLOV8.i: src/sampleYOLOV8.cpp.i
+.PHONY : src/sampleYOLOV8.i
 
 # target to preprocess a source file
-sampleYOLOV8.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sampleYOLOV8.cpp.i
-.PHONY : sampleYOLOV8.cpp.i
+src/sampleYOLOV8.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascend_310b_yolov8_demo.dir/build.make CMakeFiles/ascend_310b_yolov8_demo.dir/src/sampleYOLOV8.cpp.i
+.PHONY : src/sampleYOLOV8.cpp.i
 
-sampleYOLOV8.s: sampleYOLOV8.cpp.s
-.PHONY : sampleYOLOV8.s
+src/sampleYOLOV8.s: src/sampleYOLOV8.cpp.s
+.PHONY : src/sampleYOLOV8.s
 
 # target to generate assembly for a file
-sampleYOLOV8.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sampleYOLOV8.cpp.s
-.PHONY : sampleYOLOV8.cpp.s
+src/sampleYOLOV8.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ascend_310b_yolov8_demo.dir/build.make CMakeFiles/ascend_310b_yolov8_demo.dir/src/sampleYOLOV8.cpp.s
+.PHONY : src/sampleYOLOV8.cpp.s
 
 # Help Target
 help:
@@ -210,10 +210,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... main"
-	@echo "... sampleYOLOV8.o"
-	@echo "... sampleYOLOV8.i"
-	@echo "... sampleYOLOV8.s"
+	@echo "... ascend_310b_yolov8_demo"
+	@echo "... src/sampleYOLOV8.o"
+	@echo "... src/sampleYOLOV8.i"
+	@echo "... src/sampleYOLOV8.s"
 .PHONY : help
 
 

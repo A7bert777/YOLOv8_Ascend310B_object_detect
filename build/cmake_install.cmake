@@ -1,4 +1,4 @@
-# Install script for directory: /data/ascend-yolov8-sample/src
+# Install script for directory: /data/YOLOv8_Ascend310B_object_detect-main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,21 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../out/main" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../out/main")
+  if(EXISTS "$ENV{DESTDIR}/data/YOLOv8_Ascend310B_object_detect-main/build/ascend_310b_yolov8_demo" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/data/YOLOv8_Ascend310B_object_detect-main/build/ascend_310b_yolov8_demo")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../out/main"
+         FILE "$ENV{DESTDIR}/data/YOLOv8_Ascend310B_object_detect-main/build/ascend_310b_yolov8_demo"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/../out" TYPE EXECUTABLE FILES "/data/ascend-yolov8-sample/out/main")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../out/main" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../out/main")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/data/YOLOv8_Ascend310B_object_detect-main/build/ascend_310b_yolov8_demo")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/data/YOLOv8_Ascend310B_object_detect-main/build" TYPE EXECUTABLE FILES "/data/YOLOv8_Ascend310B_object_detect-main/build/ascend_310b_yolov8_demo")
+  if(EXISTS "$ENV{DESTDIR}/data/YOLOv8_Ascend310B_object_detect-main/build/ascend_310b_yolov8_demo" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/data/YOLOv8_Ascend310B_object_detect-main/build/ascend_310b_yolov8_demo")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../out/main"
-         OLD_RPATH "/usr/local/Ascend/thirdpart/aarch64/lib:/usr/local/Ascend/ascend-toolkit/latest/aarch64-linux/lib64:"
+         FILE "$ENV{DESTDIR}/data/YOLOv8_Ascend310B_object_detect-main/build/ascend_310b_yolov8_demo"
+         OLD_RPATH "/usr/local/Ascend/thirdpart/lib:/usr/local/Ascend/ascend-toolkit/latest/aarch64-linux/lib64:/usr/local/Ascend/mxVision-5.0.RC3/opensource/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/../out/main")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/data/YOLOv8_Ascend310B_object_detect-main/build/ascend_310b_yolov8_demo")
     endif()
   endif()
 endif()
@@ -70,5 +78,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/data/ascend-yolov8-sample/src/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data/YOLOv8_Ascend310B_object_detect-main/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
